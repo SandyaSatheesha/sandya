@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Dashboard</title>
+</head>
+<body>
+  <h1 style="color: tomato">Employee List</h1>
+  <table border="1">
+    <tr>
+      <th>Id</th>
+      <th>Employee Id</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th>Address</th>
+    </tr>
+{% for employee in employees %}
+    <tr>
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.empid }}</td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.age }}</td>
+      <td>{{ employee.salary }}</td>
+      <td>{{ employee.address }}</td>
+    </tr>
+{% endfor %}
+  </table>
+
+</body>
+</html>

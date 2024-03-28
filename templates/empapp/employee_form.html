@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+      <h1 style="color: blue">Create Employee</h1>
+      <table>
+        <tr>
+            <td>Employee Id</td>
+            <td><input type="text" name="emp_id"></td>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="emp_name"></td>
+        </tr>
+
+        <tr>
+            <td>Age</td>
+            <td><input type="text" name="emp_age"></td>
+        </tr>
+
+        <tr>
+            <td>Salary</td>
+            <td><input type="text" name="emp_salary"></td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="emp_address"></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" name="submit" value="Create Employee"></td>
+        </tr>
+      </table>
+    </form>
+</body>
+</html>
